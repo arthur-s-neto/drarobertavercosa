@@ -1,8 +1,8 @@
 // Theme toggle, reveal on scroll, carousel with autoplay and manual nav, placeholder replacements
 document.addEventListener('DOMContentLoaded', function(){
   // Theme toggle
-  const themeToggle = document.getElementById('theme-toggle');
-  themeToggle.addEventListener('click', ()=> document.body.classList.toggle('dark-mode'));
+  //const themeToggle = document.getElementById('theme-toggle');
+  //themeToggle.addEventListener('click', ()=> document.body.classList.toggle('dark-mode'));
 
   // Reveal on scroll (simple)
   const reveals = document.querySelectorAll('.reveal');

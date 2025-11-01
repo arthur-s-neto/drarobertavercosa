@@ -1,6 +1,7 @@
 /* Base / Variables */
 :root{
-  --accent:#A61B1B; /* warm red */
+  --accent3:#A61B1B; /* warm red */
+  --accent:#ef3300;
   --accent-2:#C94B3F;
   --beige:#F5E9E3;
   --bg:#FFF8F6;
@@ -45,7 +46,7 @@ img{max-width:100%;display:block}
 
 /* Sections */
 .section{padding:54px 0}
-.diffs .diff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.diffs .diff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;margin-top:18px}
 .diff-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
 
 /* Table */
@@ -101,3 +102,5 @@ body.dark-mode .btn-primary{box-shadow:0 8px 20px rgba(0,0,0,0.4);}
   .hero h1{font-size:24px}
   .logo{height:46px}
 }
+
+.whatsapp{height:46px}
