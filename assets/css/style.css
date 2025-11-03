@@ -63,9 +63,10 @@ img{max-width:100%;display:block}
 .procedures-table th, .procedures-table td{padding:14px 16px;border-bottom:1px solid rgba(30,27,24,0.04);text-align:left}
 .procedures-table thead th{background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(250,245,242,0.9));font-weight:700}
 .procedures-table img {
-  width: 150px;       /* desired width */
-  height: 150px;      /* desired height */
+  width: 100px;       /* desired width */
+  height: 100px;      /* desired height */
   object-fit: cover;  /* crop to fit without distortion */
+  min-width:100px;
 }
 
 
