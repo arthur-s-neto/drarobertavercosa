@@ -90,6 +90,11 @@ document.addEventListener('DOMContentLoaded', function(){
       document.querySelectorAll('a[href^="mailto:"]').forEach(a=>{
         a.href = 'mailto:' + opts.email;
       });
+      const emailNode = document.getElementById('email');
+      if(emailNode) {
+		  emailNode.href = 'mailto:' + opts.email;
+		  emailNode.textContent = opts.email;
+	  }
     }
     if(opts.mapEmbedUrl){
       document.querySelectorAll('iframe[src*="PLACEHOLDER_MAP_EMBED"]').forEach(f=> f.src = opts.mapEmbedUrl);

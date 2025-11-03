@@ -23,6 +23,14 @@ img{max-width:100%;display:block}
 .container{max-width:var(--maxw);margin:0 auto;padding:28px}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{height:56px}
+.container-centralized{max-width:var(--maxw);margin:0 auto;padding:28px;display: flex;justify-content: center;align-items: center;flex-direction: column}
+
+
+.contact-cta {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+}
+
 
 /* Nav */
 .nav a{margin:0 8px;color:var(--dark);text-decoration:none;font-weight:600}
@@ -60,14 +68,16 @@ img{max-width:100%;display:block}
 .process-steps li{background:var(--card);padding:14px;border-radius:10px;box-shadow:var(--shadow)}
 
 /* Carousel */
+/*
 .carousel{position:relative;overflow:hidden;margin-top:18px;border-radius:12px;background:var(--card);padding:20px;box-shadow:var(--shadow)}
-.carousel-track{display:flex;transition:transform .5s ease}
-.slide{min-width:100%;flex-shrink:0;padding:12px;text-align:center}
+.carousel-track{display:flex;transition:transform .5s ease;width: 100%;overflow: hidden;}
+.slide{min-width:100%;flex-shrink:0;padding:12px;text-align:center;box-sizing: border-box;overflow: hidden;}
 .avatar{width:72px;height:72px;border-radius:50%;object-fit:cover;margin:0 auto 8px;display:block}
 .carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.9);border:0;padding:10px;border-radius:8px;cursor:pointer;font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
 .carousel-btn.prev{left:10px}
 .carousel-btn.next{right:10px}
 .carousel-dots{display:flex;gap:8px;justify-content:center;margin-top:12px}
+*/
 
 /* FAQ */
 .faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
@@ -104,3 +114,114 @@ body.dark-mode .btn-primary{box-shadow:0 8px 20px rgba(0,0,0,0.4);}
 }
 
 .whatsapp{height:46px}
+
+
+/* Container */
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 18px;
+  border-radius: 12px;
+  background: var(--card);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* Carousel Track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+/* Individual Slide */
+.slide {
+  flex: 0 0 100%; /* Each slide takes full width */
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Avatar Image */
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 8px;
+  display: block;
+}
+
+/* Quote Text */
+.quote {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  margin-top: 8px;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 12px;
+  }
+
+  .slide {
+    padding: 8px;
+  }
+
+  .carousel-btn {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .quote {
+    font-size: 14px;
+  }
+}
